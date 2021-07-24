@@ -41,6 +41,7 @@ class BISMeshPanel(Panel):
                     layout.operator('bis.get_nodes_info_from_storage', icon='FILE_REFRESH', text=' Get active materials')
                 layout.prop(context.window_manager.bis_get_nodes_info_from_storage_vars, 'update_previews')
                 layout.separator()
+                row.operator("wm.url_open", text="Open BIS Site").url = "https://bis.interplanety.org/"
                 layout.separator()
                 layout.template_icon_view(
                     context.window_manager.bis_get_nodes_info_from_storage_vars,
